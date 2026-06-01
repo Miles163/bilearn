@@ -1,0 +1,5 @@
+{
+  "name": "BilLeaRN",
+  "postCreateCommand": "pip install -r backend/requirements.txt",
+  "forwardPorts": [8000]
+}
