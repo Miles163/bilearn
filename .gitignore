@@ -1,0 +1,15 @@
+__pycache__
+*.pyc
+.env
+*.db
+bilearn_credential.json
+bilearn_qrcode.png
+*.log
+temp_audio/
+whisper_models/
+vosk_models/
+backend/static/qrcodes/
+*.pyc
+*.m4a
+*.wav
+*.zip
