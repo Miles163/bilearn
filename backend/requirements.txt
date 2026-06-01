@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+bilibili-api-python
+yt-dlp
+SpeechRecognition
+fpdf2
+python-docx
+psycopg2-binary
+
