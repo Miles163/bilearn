@@ -96,9 +96,9 @@ def generate_notes(subtitle: str) -> tuple[dict, dict]:
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {DEEPSEEK_API_KEY}",
-            "Content-Type": "application/json",
-        },
-    )
+    }
+
+    req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers=headers)
 
     try:
         with urllib.request.urlopen(req, timeout=180) as resp:
