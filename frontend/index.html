@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BilLeaRN</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-brand">BilLeaRN</div>
+  <div class="nav-links">
+    <a href="/" data-link>仪表盘</a>
+    <a href="/import" data-link>导入</a>
+    <a href="/videos" data-link>视频库</a>
+    <a href="/stats" data-link>统计</a>
+    <button class="nav-btn" id="biliLoginBtn" onclick="showLoginModal()">B站登录</button>
+  </div>
+</nav>
+<main id="app"></main>
+
+<div id="loginModal" class="modal hidden">
+  <div class="modal-content" style="text-align:center">
+    <h2>B站扫码登录</h2>
+    <p style="color:#888">请用 B站手机APP 扫一扫</p>
+    <div id="qrContainer"><p>加载中...</p></div>
+    <p id="loginStatus" style="color:#888;margin-top:12px"></p>
+    <button class="btn" onclick="closeLoginModal()" style="margin-top:16px">关闭</button>
+  </div>
+</div>
+
+<script src="/js/api.js"></script>
+<script src="/js/router.js"></script>
+</body>
+</html>
