@@ -85,6 +85,12 @@ def generate_notes(subtitle: str) -> tuple[dict, dict]:
                 "translated_subtitle": "",
                 "cards": []}, {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0, "cost": 0}
 
+    system_prompt = _build_system_prompt(subtitle)
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": subtitle[:6000]},
+    ]
+
     payload = {
         "model": DEEPSEEK_MODEL,
         "messages": messages,
